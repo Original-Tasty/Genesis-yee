@@ -1,9 +1,9 @@
 # GenesisH0
 A python script for creating the parameters required for a unique genesis block. SHA256/scrypt/X11/X13/X15.
 
-### Dependencies apt install python-pip
+### Dependencies + git clone on Ubuntu 18.04
 
-    apt-get install libssl-dev -y && apt install python-pip -y && pip install 'requests[security]'  && pip install scrypt construct==2.5.2
+    apt-get update && apt-get upgrade -y && apt-get update && apt install python3-pip -y && apt install python-pip -y && apt-get install libssl-dev && pip install scrypt construct==2.5.2 && git clone https://github.com/gnark-mining/GenesisH0.git && cd GenesisH0
 
 To create geneses based on X11 algorithm you will also need to install the [xcoin-hash](https://github.com/lhartikk/xcoin-hash) module. 
 For X13 you will need the [x13_hash](https://github.com/sherlockcoin/X13-PythonHash) module and for X15 the [x15_hash](https://github.com/minings/x15_hash) module.
