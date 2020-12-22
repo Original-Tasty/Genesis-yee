@@ -1,4 +1,4 @@
-# GenesisH0
+﻿# GenesisH0
 A python script for creating the parameters required for a unique genesis block. SHA256/scrypt/X11/X13/X15.
 
 ### Dependencies + git clone on Ubuntu 18.04
@@ -7,6 +7,18 @@ A python script for creating the parameters required for a unique genesis block.
 
 To create geneses based on X11 algorithm you will also need to install the [xcoin-hash](https://github.com/lhartikk/xcoin-hash) module. 
 For X13 you will need the [x13_hash](https://github.com/sherlockcoin/X13-PythonHash) module and for X15 the [x15_hash](https://github.com/minings/x15_hash) module.
+
+# Install Algos Modules
+
+### Python module for x11 PoW algorithm
+    cd xcoin-hash && sudo python setup.py install
+### Python module for x13 PoW algorithm
+    cd X13-PythonHash-master && sudo python setup.py install
+### Python module for x15 PoW algorithm
+    cd x15_hash-master && sudo python setup.py install
+### Python module for quark PoW algorithm
+    cd quarkcoin-hash-python && sudo python setup.py install
+
     
 ### Examples
 Create the original genesis hash found in Bitcoin
