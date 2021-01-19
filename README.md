@@ -78,3 +78,9 @@ Create the original genesis hash found in HiroCoin (requires [xcoin-hash](https:
       -b BITS, --bits=BITS
          the target in compact representation, associated to a difficulty of 1
 
+
+### Generate new ParseHex Pubkey:
+    openssl genpkey -algorithm ec -outform der -pkeyopt ec_paramgen_curve:secp256k1 -text
+
+
+
